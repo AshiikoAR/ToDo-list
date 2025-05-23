@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# FujiTask – Application de gestion de tâches (Front-end)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Fonctionnalités principales
 
-## Available Scripts
+- **Ajout de tâches** : formulaire multi-étapes avec validation, suggestions de localisation (API Mapbox), gestion de la date/heure, description, etc.
+- **Affichage de la liste** : toutes les tâches sont listées avec nom, description, localisation, date/heure et statut (réalisée/en cours).
+- **Modification de tâche** : édition dynamique (nom, description, localisation, date/heure) avec suggestions et validation.
+- **Suppression de tâche** : confirmation avant suppression définitive.
+- **Complétion** : possibilité de marquer une tâche comme réalisée ou non réalisée.
+- **Filtres dynamiques** : filtrage par statut (Toutes, En cours, Réalisées) via boutons accessibles.
+- **Suggestions de localisation** : autocomplétion lors de la saisie de la localisation grâce à l’API Mapbox.
+- **Accessibilité** : navigation clavier, focus automatique sur les champs pertinents, boutons accessibles.
+- **Design responsive** : interface moderne, adaptée mobile et desktop.
+- **Tests unitaires et d’intégration** : couverture élevée sur les composants et les workflows principaux.
+- **Qualité de code** : typage TypeScript strict, ESLint, Prettier, conventions pro.
 
-In the project directory, you can run:
+## Stack technique
+- React 18 + TypeScript
+- Axios (services API)
+- Jest + React Testing Library (tests)
+- ESLint, Prettier
 
-### `npm start`
+## Structure des composants
+- `TodoForm` : ajout de tâche (multi-étapes, suggestions)
+- `TodoItem` : affichage, modification, suppression, complétion d’une tâche
+- `TodoList` : conteneur de la liste
+- `TodoFilters` : boutons de filtre
+- `Footer` : pied de page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Lancer l’application
+```sh
+npm install
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Lancer les tests
+```sh
+npm test
+```
 
-### `npm test`
+## Couverture de tests
+```sh
+npm test -- --coverage
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pour toute question ou contribution, voir le dépôt GitHub du projet.
