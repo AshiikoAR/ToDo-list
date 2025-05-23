@@ -40,7 +40,7 @@ npm test
 
 ## Couverture de tests
 ```sh
-npm test -- --coverage
+npm test -- --coverage --watchAll=false
 ```
 
 ---
